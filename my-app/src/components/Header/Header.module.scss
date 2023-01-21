@@ -1,36 +1,46 @@
 .header {
-  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+}
 
+.content {
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
   }
 }
 
-.headerSvg {
+.logoIcon {
   margin-right: 8px;
-  padding-top: 25.69px;
+  width: 39.31px;
+  height: 35px;
 
   @media screen and (min-width: 768px) and (max-width: 1359px) {
-    padding-top: 25.19px;
     margin-right: 9.69px;
   }
 
   @media screen and (min-width: 1360px) {
-    padding-top: 40.5px;
+    width: 40px;
     margin-right: 4px;
   }
 }
 
 .logo {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
+  display: flex;
   font-size: 28px;
   line-height: 38px;
   margin-right: auto;
-  padding-top: 32px;
+  padding-top: 22px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding-top: 16px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 32px;
     font-size: 35px;
     line-height: 48px;
   }
@@ -41,32 +51,50 @@
   margin-right: 4px;
 }
 
+.nav {
+  display: flex;
+}
+
 .navList {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  padding-top: 48px;
+  padding-top: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding-top: 28px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 48px;
+  }
 }
 
 .navItem {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 22px;
 
-  &:nth-child(1) {
-    margin-right: 46px;
+  &:not(:last-child) {
+    margin-right: 12px;
   }
-  &:nth-child(2) {
-    margin-right: 46.5px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
-  &:nth-child(3) {
-    margin-right: 52.5px;
-  }
-  &:nth-child(4) {
-    margin-right: 50.5px;
+
+  @media screen and (min-width: 1360px) {
+    &:nth-child(1) {
+      margin-right: 46px;
+    }
+    &:nth-child(2) {
+      margin-right: 46.5px;
+    }
+    &:nth-child(3) {
+      margin-right: 52.5px;
+    }
+    &:nth-child(4) {
+      margin-right: 50.5px;
+    }
   }
 }
 
