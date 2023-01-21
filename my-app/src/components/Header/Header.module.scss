@@ -32,6 +32,7 @@
   line-height: 38px;
   margin-right: auto;
   padding-top: 22px;
+  color: white;
 
   @media screen and (min-width: 768px) and (max-width: 1359px) {
     padding-top: 16px;
@@ -99,7 +100,7 @@
 }
 
 .navButton {
-  color: black;
+  color: white;
   background-color: transparent;
   border: none;
   outline: none;
