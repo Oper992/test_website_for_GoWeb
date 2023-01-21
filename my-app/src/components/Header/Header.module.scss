@@ -1,24 +1,41 @@
 .header {
   display: flex;
-  // padding: 0 29.5px 0 28px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .headerSvg {
-  margin-right: 4px;
-  padding-top: 40.5px;
+  margin-right: 8px;
+  padding-top: 25.69px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding-top: 25.19px;
+    margin-right: 9.69px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 40.5px;
+    margin-right: 4px;
+  }
 }
 
 .logo {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 48px;
-  height: 48px;
-  margin: 0;
+  font-size: 28px;
+  line-height: 38px;
   margin-right: auto;
   padding-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+    line-height: 48px;
+  }
 }
+
 .logoPart {
   color: #28a745;
   margin-right: 4px;
