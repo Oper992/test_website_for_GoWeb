@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  // padding: 0 29.5px 0 28px;
+}
+
+.headerSvg {
+  margin-right: 4px;
+  padding-top: 40.5px;
+}
+
+.logo {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48px;
+  height: 48px;
+  margin: 0;
+  margin-right: auto;
+  padding-top: 32px;
+}
+.logoPart {
+  color: #28a745;
+  margin-right: 4px;
+}
+
+.navList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 48px;
+}
+
+.navItem {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  &:nth-child(1) {
+    margin-right: 46px;
+  }
+  &:nth-child(2) {
+    margin-right: 46.5px;
+  }
+  &:nth-child(3) {
+    margin-right: 52.5px;
+  }
+  &:nth-child(4) {
+    margin-right: 50.5px;
+  }
+}
+
+.navButton {
+  color: black;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
