@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  padding: 32px 0 0 28px;
+  align-items: flex-end;
+}
+
+.headerSvg {
+  margin-right: 4px;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48px;
+  margin: 0;
+}
+.logoPart {
+  color: #28a745;
+}
+
+.navList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
