@@ -1,5 +1,5 @@
 import { HandySvg } from "handy-svg";
-import OpenBookIcon from "../../images/images/header/fa-solid_book-open.svg";
+import OpenBookIcon from "../../images/header/fa-solid_book-open.svg";
 import style from "./Header.module.scss";
 
 export const Header = () => {

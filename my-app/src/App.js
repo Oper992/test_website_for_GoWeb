@@ -1,5 +1,6 @@
 import { Header } from "./components/Header/Header.jsx";
 import { Hero } from "./components/Hero/Hero.jsx";
+import { Offer } from "./components/Offer/Offer.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <Offer />
       </main>
     </>
   );
