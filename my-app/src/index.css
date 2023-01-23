@@ -26,16 +26,14 @@ code {
 
 @media screen and (min-width: 768px) and (max-width: 1359px) {
   .container {
-    width: 100%;
-    min-width: 768px;
+    width: 768px;
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1360px) {
   .container {
-    width: 100%;
-    min-width: 1360px;
+    width: 1360px;
     padding: 0 28px;
   }
 }
