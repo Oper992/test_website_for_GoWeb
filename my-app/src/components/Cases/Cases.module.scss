@@ -1,0 +1,111 @@
+.cases {
+   color: #333333;
+  padding: 56px 0 40px 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding: 48px 0 40px 0;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 0;
+  }
+}
+
+.preTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 18px;
+    line-height: 33px;
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+
+  width: 219px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    font-size: 40px;
+    line-height: 54px;
+    width: auto;
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 40px;
+    line-height: 48px;
+    width: auto;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 31px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.imagesList {
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -18px;
+    margin-bottom: -18px;
+  }
+}
+
+.imagesItem {
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    width: 223px;
+    height: auto;
+    margin-bottom: 18px;
+    flex-basis: calc((100% / 3) - 18px);
+    margin-right: 18px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 421px;
+    height: auto;
+    margin-bottom: 18px;
+    flex-basis: calc((100% / 3) - 18px);
+    margin-right: 18px;
+  }
+}
+
+.imagesItem:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+  }
+
+  @media screen and (min-width: 1360px) {
+  }
+}
