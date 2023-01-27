@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+}
+
+.content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.logoIcon {
+  margin-right: 8px;
+  width: 39.31px;
+  height: 35px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    margin-right: 9.69px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 40px;
+    margin-right: 4px;
+  }
+}
+
+.logo {
+  font-weight: 400;
+  display: flex;
+  font-size: 28px;
+  line-height: 38px;
+  margin-right: auto;
+  padding-top: 22px;
+  color: white;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding-top: 16px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 32px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+.logoPart {
+  color: #28a745;
+  margin-right: 4px;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  padding-top: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding-top: 28px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 48px;
+  }
+}
+
+.navItem {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    &:nth-child(1) {
+      margin-right: 46px;
+    }
+    &:nth-child(2) {
+      margin-right: 46.5px;
+    }
+    &:nth-child(3) {
+      margin-right: 52.5px;
+    }
+    &:nth-child(4) {
+      margin-right: 50.5px;
+    }
+  }
+}
+
+.navButton {
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}

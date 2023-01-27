@@ -1,0 +1,119 @@
+.team {
+  padding: 72px 0 50px 0;
+  color: #333333;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding: 50px 0 40px 0;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 0 88px 0;
+  }
+}
+
+.beforeTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.afterTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 63px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 36px;
+  }
+}
+
+.teamList {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.teamItem:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    margin-bottom: 0;
+    margin-right: 18px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 0;
+    margin-right: 22px;
+  }
+}
+
+.teamImage {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.personTitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.personDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
