@@ -1,0 +1,28 @@
+.footer {
+  height: 109px;
+  background-color: #333333;
+  padding: 20px 0;
+}
+
+.info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.socialIconsList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.socialIconsItem {
+  display: flex;
+  align-items: center;
+}
+
+.socialIconsItem:not(:last-child) {
+  margin-right: 25px;
+}

@@ -5,6 +5,7 @@ import { Cases } from "./components/Cases/Cases.jsx";
 import { Blog } from "./components/Blog/Blog.jsx";
 import { Team } from "./components/Team/Team.jsx";
 import { Contact } from "./components/Contact/Contact.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <Team />
         <Contact />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
