@@ -1,6 +1,20 @@
+.contact {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .contactForm {
+  width: 100%;
   padding: 51px 20px 50px 20px;
   color: #333333;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+}
+
+.contactImage {
+  display: block;
+  width: 368px;
 }
 
 .title {
@@ -8,4 +22,41 @@
   font-size: 32px;
   line-height: 48px;
   margin-bottom: 69px;
+}
+
+.input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  width: 100%;
+  padding: 16px 8px;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+}
+
+.input:disabled {
+  background: white;
+}
+
+.label:nth-child(1) {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.label:nth-child(2) {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.buttonSubmit {
+  width: 155px;
+  height: 57px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
 }
