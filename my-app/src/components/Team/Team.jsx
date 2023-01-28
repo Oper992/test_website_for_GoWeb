@@ -26,6 +26,36 @@ export const Team = () => {
                   />
                   <img src="/images/team/person1.jpg" alt="Person 1" />
                 </picture>
+                <ul className={style.socialIconsList}>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/facebook.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </li>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/twitter.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </li>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/youtube.svg"
+                      width="40"
+                      height="28"
+                    />
+                  </li>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/linkedin.svg"
+                      width="31"
+                      height="35"
+                    />
+                  </li>
+                </ul>
               </div>
               <h3 className={style.personTitle}>John Doe</h3>
               <p className={style.personDescription}>President</p>
@@ -43,6 +73,36 @@ export const Team = () => {
                   />
                   <img src="/images/team/person2.jpg" alt="Person 2" />
                 </picture>
+                <ul className={style.socialIconsList}>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/facebook.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </li>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/twitter.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </li>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/youtube.svg"
+                      width="40"
+                      height="28"
+                    />
+                  </li>
+                  <li className={style.socialIconsItem}>
+                    <HandySvg
+                      src="/images/social/linkedin.svg"
+                      width="31"
+                      height="35"
+                    />
+                  </li>
+                </ul>
               </div>
               <h3 className={style.personTitle}>Jane Doe</h3>
               <p className={style.personDescription}>Vice President</p>

@@ -1,5 +1,5 @@
 .cases {
-   color: #333333;
+  color: #333333;
   padding: 56px 0 40px 0;
 
   @media screen and (min-width: 768px) and (max-width: 1359px) {
@@ -11,7 +11,7 @@
   }
 }
 
-.preTitle {
+.beforeTitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -72,7 +72,7 @@
 }
 
 .imagesList {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -18px;
@@ -81,6 +81,13 @@
 }
 
 .imagesItem {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    filter: opacity(0.6);
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1359px) {
     width: 223px;
     height: auto;
