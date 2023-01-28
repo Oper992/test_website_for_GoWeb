@@ -1,36 +1,28 @@
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
 import style from "./Blog.module.scss";
-import blogImageJpg from "../../images/home/blog.jpg";
-import blogImageJpgRetina from "../../images/home/blog@2x.jpg";
-import blogImageWebp from "../../images/home/blog.webp";
-import blogImageWebpRetina from "../../images/home/blog@2x.webp";
-import blogImageJpgTablet from "../../images/home/BlogTablet.jpg";
-import blogImageJpgTabletRetina from "../../images/home/BlogTablet@2x.jpg";
-import blogImageWebpTablet from "../../images/home/BlogTablet.webp";
-import blogImageWebpTabletRetina from "../../images/home/BlogTablet@2x.webp";
 
 export const Blog = () => {
   return (
     <section>
       <div className={style.blog}>
         <Mobile>
-          <div className={style.peopleImage}>
+          <div className={style.blogImage}>
             <picture>
               <source
-                srcset={`${blogImageWebp} 1x, ${blogImageWebpRetina} 2x`}
+                srcset="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset={`${blogImageJpg} 1x, ${blogImageJpgRetina} 2x`}
+                srcset="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
                 type="image/jpeg"
               />
-              <img src={blogImageJpg} alt="People" />
+              <img src="/images/home/blog@2x.jpg" alt="People" />
             </picture>
           </div>
           <div className={style.description}>
-            <p className={style.preTitle}>April 16 2020</p>
+            <p className={style.beforeTitle}>April 16 2020</p>
             <h2 className={style.title}>Blog Post One</h2>
-            <p className={style.postTitle}>
+            <p className={style.afterTitle}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptate, ipsum dignissimos quae laudantium asperiores nam
               aliquid impedit harum illum dolore explicabo ab dolores itaque
@@ -43,9 +35,9 @@ export const Blog = () => {
         </Mobile>
         <Tablet>
           <div className={style.description}>
-            <p className={style.preTitle}>April 16 2020</p>
+            <p className={style.beforeTitle}>April 16 2020</p>
             <h2 className={style.title}>Blog Post One</h2>
-            <p className={style.postTitle}>
+            <p className={style.afterTitle}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptate, ipsum dignissimos quae laudantium asperiores nam
               aliquid impedit harum illum dolore explicabo ab dolores itaque
@@ -55,45 +47,45 @@ export const Blog = () => {
               Read Our Blog
             </button>
           </div>
-          <div className={style.peopleImage}>
+          <div className={style.blogImage}>
             <picture>
               <source
-                srcset={`${blogImageWebpTablet} 1x, ${blogImageWebpTabletRetina} 2x`}
+                srcset="/images/home/BlogTablet.webp 1x, /images/home/BlogTablet@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset={`${blogImageJpgTablet} 1x, ${blogImageJpgTabletRetina} 2x`}
+                srcset="/images/home/BlogTablet.jpg 1x, /images/home/BlogTablet@2x.jpg 2x"
                 type="image/jpeg"
               />
-              <img src={blogImageJpgTablet} alt="People" />
+              <img src="/images/home/BlogTablet.jpg" alt="People" />
             </picture>
           </div>
         </Tablet>
         <Desktop>
           <div className={style.description}>
-            <p className={style.preTitle}>April 16 2020</p>
+            <p className={style.beforeTitle}>April 16 2020</p>
             <h2 className={style.title}>Blog Post One</h2>
-            <p className={style.postTitle}>
+            <p className={style.afterTitle}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptate, ipsum dignissimos quae laudantium asperiores nam
               aliquid impedit harum illum dolore explicabo ab dolores itaque
               rerum temporibus doloribus iste maiores deleniti?
             </p>
-            <button type="button" className={style.offerButton}>
+            <button type="button" className={style.blogButton}>
               Read Our Blog
             </button>
           </div>
-          <div className={style.peopleImage}>
-            <picture>
+          <div className={style.blogImage}>
+          <picture>
               <source
-                srcset={`${blogImageWebp} 1x, ${blogImageWebpRetina} 2x`}
+                srcset="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset={`${blogImageJpg} 1x, ${blogImageJpgRetina} 2x`}
+                srcset="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
                 type="image/jpeg"
               />
-              <img src={blogImageJpg} alt="People" />
+              <img src="/images/home/blog@2x.jpg" alt="People" />
             </picture>
           </div>
         </Desktop>

@@ -1,6 +1,6 @@
 import { Header } from "./components/Header/Header.jsx";
 import { Hero } from "./components/Hero/Hero.jsx";
-import { Offer } from "./components/Offer/Offer.jsx";
+import { About } from "./components/About/About.jsx";
 import { Cases } from "./components/Cases/Cases.jsx";
 import { Blog } from "./components/Blog/Blog.jsx";
 import { Team } from "./components/Team/Team.jsx";
@@ -15,7 +15,7 @@ function App() {
       </header>
       <main>
         <Hero />
-        <Offer />
+        <About />
         <Cases />
         <Blog />
         <Team />

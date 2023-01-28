@@ -21,8 +21,15 @@
 .socialIconsItem {
   display: flex;
   align-items: center;
+  fill: white;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialIconsItem:not(:last-child) {
   margin-right: 25px;
+}
+
+.socialIconsItem:hover {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #28a745;
 }
