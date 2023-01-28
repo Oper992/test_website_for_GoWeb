@@ -6,16 +6,26 @@ import { Blog } from "./components/Blog/Blog.jsx";
 import { Team } from "./components/Team/Team.jsx";
 import { Contact } from "./components/Contact/Contact.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
+import { useRef } from "react";
 
 function App() {
+  const refs = {
+    aboutRef: useRef(null),
+    casesRef: useRef(null),
+    blogRef: useRef(null),
+    teamRef: useRef(null),
+    contactRef: useRef(null),
+  };
+
+  console.log(refs.aboutRef)
   return (
     <>
       <header>
-        <Header />
+        <Header refs={refs} />
       </header>
       <main>
         <Hero />
-        <About />
+        <About aboutRef={refs.aboutRef}/>
         <Cases />
         <Blog />
         <Team />

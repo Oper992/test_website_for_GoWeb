@@ -9,9 +9,9 @@ import peopleImageWebp from "../../images/home/people.webp";
 import peopleImageWebpRetina from "../../images/home/people@2x.webp";
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
 
-export const About = () => {
+export const About = ({ aboutRef }) => {
   return (
-    <section>
+    <section ref={aboutRef}>
       <div className={style.about}>
         <Mobile>
           <div className={style.peopleImage}>
