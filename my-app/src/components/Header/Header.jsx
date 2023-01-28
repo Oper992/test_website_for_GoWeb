@@ -10,11 +10,17 @@ export const Header = () => {
     window.addEventListener("scroll", () => {
       let windowRelativeTop =
         document.documentElement.getBoundingClientRect().top;
+      let windowInnerWidth = window.innerWidth;
 
-      console.log(hederRef);
-      windowRelativeTop < -200
-        ? hederRef.current.classList.remove("nn")
-        : hederRef.current.classList.add("nn");
+      if (windowInnerWidth < 768) {
+        windowRelativeTop < -120
+          ? hederRef.current.classList.add(style.headerScroll)
+          : hederRef.current.classList.remove(style.headerScroll);
+      } else {
+        windowRelativeTop < -70
+          ? hederRef.current.classList.add(style.headerScroll)
+          : hederRef.current.classList.remove(style.headerScroll);
+      }
     });
   }, []);
 
