@@ -1,22 +1,25 @@
 import { HandySvg } from "handy-svg";
 import OpenBookIcon from "../../images/header/fa-solid_book-open.svg";
 import style from "./Header.module.scss";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export const Header = () => {
+  const hederRef = useRef();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let windowRelativeTop =
         document.documentElement.getBoundingClientRect().top;
 
+      console.log(hederRef);
       windowRelativeTop < -200
-        ? refs.arrowRefs.classList.remove("is-hidden-arrow")
-        : refs.arrowRefs.classList.add("is-hidden-arrow");
+        ? hederRef.current.classList.remove("nn")
+        : hederRef.current.classList.add("nn");
     });
   }, []);
 
   return (
-    <div className={style.header}>
+    <div ref={hederRef} className={style.header}>
       <div className="container">
         <div className={style.content}>
           <div className={style.logo}>
