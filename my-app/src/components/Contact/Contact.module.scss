@@ -73,6 +73,7 @@
   background: white;
 }
 
+
 .label:nth-child(1) {
   display: block;
   margin-bottom: 16px;
@@ -102,4 +103,19 @@
   line-height: 25px;
   text-align: center;
   color: #ffffff;
+}
+
+.errorMessage {
+  display: inline-flex;
+  align-items: center;
+  color: red;
+}
+
+.errorMessage::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-size: contain;
+  background-image: url(../../images//form/worning.svg);
 }

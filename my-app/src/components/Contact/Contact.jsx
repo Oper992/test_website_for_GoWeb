@@ -1,16 +1,14 @@
 import style from "./Contact.module.scss";
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
-import { useFormik } from "formik";
+import { Formik, Form, Field } from "formik";
+import * as Yup from "yup";
 
 export const Contact = ({ contactRef }) => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      password: "",
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
+  const SignupSchema = Yup.object().shape({
+    userName: Yup.string().min(2, "Too Short!").max(50, "Too Long!"),
+    email: Yup.string()
+      .email("Invalid email")
+      .required("This is a required field"),
   });
 
   return (
@@ -59,33 +57,63 @@ export const Contact = ({ contactRef }) => {
         </Desktop>
         <div className={style.contactForm}>
           <h2 className={style.title}>Request Callback</h2>
-          <form autoComplete="off" onSubmit={formik.handleSubmit}>
-            <label htmlFor="text" className={style.label}>
-              <input
-                className={style.input}
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-                onChange={formik.handleChange}
-                value={formik.values.name}
-              />
-            </label>
-            <label htmlFor="email" className={style.label}>
-              <input
-                className={style.input}
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Enter email*"
-                onChange={formik.handleChange}
-                value={formik.values.email}
-              />
-            </label>
-            <button className={style.buttonSubmit} type="submit">
-              Send
-            </button>
-          </form>
+          <Formik
+            initialValues={{
+              userName: "",
+              email: "",
+            }}
+            validationSchema={SignupSchema}
+            onSubmit={(values) => {
+              
+              // console.log(values);
+            }}
+          >
+            {({ errors, touched }) => (
+              <Form>
+                <div className={style.label}>
+                  <Field
+                    name="username"
+                    placeholder="Enter your name"
+                    className={style.input}
+                  />
+                </div>
+                <div className={style.label}>
+                  <Field
+                    name="email"
+                    className={style.input}
+                    placeholder="Enter email*"
+                  />
+                  {errors.email && touched.email ? (
+                    <div className={style.errorMessage}>{errors.email}</div>
+                  ) : null}
+                </div>
+                <button className={style.buttonSubmit} type="submit">
+                  Send
+                </button>
+              </Form>
+            )}
+            {/* <form autoComplete="off">
+              <label htmlFor="text" className={style.label}>
+                <input
+                  className={style.input}
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </label>
+              <label htmlFor="email" className={style.label}>
+                <input
+                  className={style.input}
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Enter email*"
+                />
+              </label>
+              <button type="submit">Send</button>
+            </form> */}
+          </Formik>
         </div>
       </div>
     </section>
