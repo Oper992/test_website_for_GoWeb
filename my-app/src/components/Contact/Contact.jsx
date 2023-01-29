@@ -1,7 +1,18 @@
 import style from "./Contact.module.scss";
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
+import { useFormik } from "formik";
 
 export const Contact = ({ contactRef }) => {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      password: "",
+    },
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
+
   return (
     <section ref={contactRef}>
       <div className={style.contact}>
@@ -48,21 +59,27 @@ export const Contact = ({ contactRef }) => {
         </Desktop>
         <div className={style.contactForm}>
           <h2 className={style.title}>Request Callback</h2>
-          <form autocomplete="new-password">
-            <label className={style.label}>
+          <form autoComplete="off" onSubmit={formik.handleSubmit}>
+            <label htmlFor="text" className={style.label}>
               <input
                 className={style.input}
+                id="name"
                 type="text"
                 name="name"
                 placeholder="Enter your name"
+                onChange={formik.handleChange}
+                value={formik.values.name}
               />
             </label>
-            <label className={style.label}>
+            <label htmlFor="email" className={style.label}>
               <input
                 className={style.input}
-                type="password"
-                name="password"
+                id="email"
+                type="email"
+                name="email"
                 placeholder="Enter email*"
+                onChange={formik.handleChange}
+                value={formik.values.email}
               />
             </label>
             <button className={style.buttonSubmit} type="submit">
