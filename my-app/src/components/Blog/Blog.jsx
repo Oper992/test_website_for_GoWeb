@@ -28,7 +28,7 @@ export const Blog = ({ blogRef }) => {
               aliquid impedit harum illum dolore explicabo ab dolores itaque
               rerum temporibus doloribus iste maiores deleniti?
             </p>
-            <button type="button" className={style.offerButton}>
+            <button type="button" className={style.blogButton}>
               Read Our Blog
             </button>
           </div>
@@ -43,7 +43,7 @@ export const Blog = ({ blogRef }) => {
               aliquid impedit harum illum dolore explicabo ab dolores itaque
               rerum temporibus doloribus iste maiores deleniti?
             </p>
-            <button type="button" className={style.offerButton}>
+            <button type="button" className={style.blogButton}>
               Read Our Blog
             </button>
           </div>

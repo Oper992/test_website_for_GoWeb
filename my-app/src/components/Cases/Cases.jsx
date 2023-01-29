@@ -1,6 +1,29 @@
+import * as React from "react";
 import style from "./Cases.module.scss";
+import { ImageModal } from "../ImageModal/ImageModal";
+import { images } from "../../helpers/images";
 
 export const Cases = ({ casesRef }) => {
+  const [isModal, setIsModal] = React.useState(false);
+  const [imageId, setImageId] = React.useState(null);
+
+  const openModal = (e) => {
+    setImageId(Number(e.currentTarget.id));
+    setIsModal(true);
+  };
+
+  const closeModal = () => {
+    setIsModal(false);
+  };
+
+  const nextImage = () => {
+    setImageId(imageId === 6 ? 1 : imageId + 1);
+  };
+
+  const prevImage = () => {
+    setImageId(imageId === 1 ? 6 : imageId - 1);
+  };
+
   return (
     <section ref={casesRef}>
       <div className="container">
@@ -12,87 +35,34 @@ export const Cases = ({ casesRef }) => {
             sapiente!
           </p>
           <ul className={style.imagesList}>
-            <li className={style.imagesItem}>
-              <picture>
-                <source
-                  srcset="/images/cases/cases1.webp 1x, /images/cases/cases1@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="/images/cases/cases1.jpg 1x, /images/cases/cases1@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img src="/images/cases/cases1.jpg" alt="Case 1" />
-              </picture>
-            </li>
-            <li className={style.imagesItem}>
-              <picture>
-                <source
-                  srcset="/images/cases/cases2.webp 1x, /images/cases/cases1@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="/images/cases/cases2.jpg 1x, /images/cases/cases2@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img src="/images/cases/cases2.jpg" alt="Case 2" />
-              </picture>
-            </li>
-            <li className={style.imagesItem}>
-              <picture>
-                <source
-                  srcset="/images/cases/cases3.webp 1x, /images/cases/cases3@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="/images/cases/cases3.jpg 1x, /images/cases/cases3@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img src="/images/cases/cases3.jpg" alt="Case 3" />
-              </picture>
-            </li>
-            <li className={style.imagesItem}>
-              <picture>
-                <source
-                  srcset="/images/cases/cases4.webp 1x, /images/cases/cases4@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="/images/cases/cases4.jpg 1x, /images/cases/cases4@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img src="/images/cases/cases4.jpg" alt="Case 4" />
-              </picture>
-            </li>
-            <li className={style.imagesItem}>
-              <picture>
-                <source
-                  srcset="/images/cases/cases5.webp 1x, /images/cases/cases5@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="/images/cases/cases5.jpg 1x, /images/cases/cases5@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img src="/images/cases/cases5.jpg" alt="Case 5" />
-              </picture>
-            </li>
-            <li className={style.imagesItem}>
-              <picture>
-                <source
-                  srcset="/images/cases/cases6.webp 1x, /images/cases/cases6@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="/images/cases/cases6.jpg 1x, /images/cases/cases6@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img src="/images/cases/cases6.jpg" alt="Case 6" />
-              </picture>
-            </li>
+            {images.map((image) => {
+              return (
+                <li key={image.id} className={style.imagesItem}>
+                  <picture id={image.id} onClick={openModal}>
+                    <source
+                      srcSet={`${image.srcWebp1x} 1x, ${image.srcWebp2x} 2x`}
+                      type="image/webp"
+                    />
+                    <source
+                      srcSet={`${image.srcJpg1x} 1x, ${image.srcJpg2x} 2x`}
+                      type="image/jpeg"
+                    />
+                    <img src={image.srcJpg1x} alt={`Case ${image.id}`} />
+                  </picture>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
+      {isModal && (
+        <ImageModal
+          id={imageId}
+          closeModal={closeModal}
+          nextImage={nextImage}
+          prevImage={prevImage}
+        />
+      )}
     </section>
   );
 };

@@ -64,12 +64,11 @@ export const Contact = ({ contactRef }) => {
             }}
             validationSchema={SignupSchema}
             onSubmit={(values) => {
-              
               // console.log(values);
             }}
           >
             {({ errors, touched }) => (
-              <Form>
+              <Form data-netlify="true" name="contact" netlify-honeypot="bot-field" hidden>
                 <div className={style.label}>
                   <Field
                     name="username"
@@ -92,27 +91,6 @@ export const Contact = ({ contactRef }) => {
                 </button>
               </Form>
             )}
-            {/* <form autoComplete="off">
-              <label htmlFor="text" className={style.label}>
-                <input
-                  className={style.input}
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder="Enter your name"
-                />
-              </label>
-              <label htmlFor="email" className={style.label}>
-                <input
-                  className={style.input}
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Enter email*"
-                />
-              </label>
-              <button type="submit">Send</button>
-            </form> */}
           </Formik>
         </div>
       </div>
