@@ -24,11 +24,33 @@ export const Header = ({ refs }) => {
     });
   }, []);
 
-  const scrollTo = (element) => {
-    window.scrollBy({
-      top: element.current,
-      behavior: "smooth",
-    });
+  const scrollTo = (e) => {
+    // console.log(hederRef.current);
+    if (e.target.textContent === "Home") {
+      refs.homeRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    if (e.target.textContent === "About") {
+      refs.aboutRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    if (e.target.textContent === "Cases") {
+      refs.casesRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    if (e.target.textContent === "Blog") {
+      refs.blogRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    if (e.target.textContent === "Contact") {
+      refs.contactRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -44,7 +66,11 @@ export const Header = ({ refs }) => {
           <nav className={style.nav}>
             <ul className={style.navList}>
               <li className={style.navItem}>
-                <button type="button" className={style.navButton}>
+                <button
+                  type="button"
+                  className={style.navButton}
+                  onClick={scrollTo}
+                >
                   Home
                 </button>
               </li>
@@ -52,23 +78,35 @@ export const Header = ({ refs }) => {
                 <button
                   type="button"
                   className={style.navButton}
-                  onClick={scrollTo(refs.aboutRef)}
+                  onClick={scrollTo}
                 >
                   About
                 </button>
               </li>
               <li className={style.navItem}>
-                <button type="button" className={style.navButton}>
+                <button
+                  type="button"
+                  className={style.navButton}
+                  onClick={scrollTo}
+                >
                   Cases
                 </button>
               </li>
               <li className={style.navItem}>
-                <button type="button" className={style.navButton}>
+                <button
+                  type="button"
+                  className={style.navButton}
+                  onClick={scrollTo}
+                >
                   Blog
                 </button>
               </li>
               <li className={style.navItem}>
-                <button type="button" className={style.navButton}>
+                <button
+                  type="button"
+                  className={style.navButton}
+                  onClick={scrollTo}
+                >
                   Contact
                 </button>
               </li>

@@ -10,26 +10,25 @@ import { useRef } from "react";
 
 function App() {
   const refs = {
+    homeRef: useRef(null),
     aboutRef: useRef(null),
     casesRef: useRef(null),
     blogRef: useRef(null),
-    teamRef: useRef(null),
     contactRef: useRef(null),
   };
 
-  console.log(refs.aboutRef)
   return (
     <>
       <header>
         <Header refs={refs} />
       </header>
       <main>
-        <Hero />
-        <About aboutRef={refs.aboutRef}/>
-        <Cases />
-        <Blog />
+        <Hero homeRef={refs.homeRef} />
+        <About aboutRef={refs.aboutRef} />
+        <Cases casesRef={refs.casesRef} />
+        <Blog blogRef={refs.blogRef} />
         <Team />
-        <Contact />
+        <Contact contactRef={refs.contactRef} />
       </main>
       <footer>
         <Footer />

@@ -2,9 +2,9 @@ import style from "./Hero.module.scss";
 import iconArrow from "../../images/hero/fa-solid_angle-right.svg";
 import { HandySvg } from "handy-svg";
 
-export const Hero = () => {
+export const Hero = ({homeRef}) => {
   return (
-    <section>
+    <section ref={homeRef}>
       <div className={style.hero}>
         <div className="container">
           <h1 className={style.heroTitle}>The Sky Is The Limit</h1>

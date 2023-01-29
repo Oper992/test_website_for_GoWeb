@@ -1,9 +1,9 @@
 import style from "./Contact.module.scss";
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
 
-export const Contact = () => {
+export const Contact = ({ contactRef }) => {
   return (
-    <section>
+    <section ref={contactRef}>
       <div className={style.contact}>
         <Mobile>
           <picture className={style.contactImage}>

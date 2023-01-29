@@ -1,8 +1,8 @@
 import style from "./Cases.module.scss";
 
-export const Cases = () => {
+export const Cases = ({ casesRef }) => {
   return (
-    <section>
+    <section ref={casesRef}>
       <div className="container">
         <div className={style.cases}>
           <p className={style.beforeTitle}>This is what we do</p>
@@ -13,7 +13,7 @@ export const Cases = () => {
           </p>
           <ul className={style.imagesList}>
             <li className={style.imagesItem}>
-              <picture >
+              <picture>
                 <source
                   srcset="/images/cases/cases1.webp 1x, /images/cases/cases1@2x.webp 2x"
                   type="image/webp"

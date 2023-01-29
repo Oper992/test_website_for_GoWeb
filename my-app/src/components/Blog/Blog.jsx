@@ -1,9 +1,9 @@
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
 import style from "./Blog.module.scss";
 
-export const Blog = () => {
+export const Blog = ({ blogRef }) => {
   return (
-    <section>
+    <section ref={blogRef}>
       <div className={style.blog}>
         <Mobile>
           <div className={style.blogImage}>
@@ -76,7 +76,7 @@ export const Blog = () => {
             </button>
           </div>
           <div className={style.blogImage}>
-          <picture>
+            <picture>
               <source
                 srcset="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
                 type="image/webp"
