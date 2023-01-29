@@ -1,0 +1,66 @@
+@import url("./fonts/font.css");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 320px;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .container {
+    width: 100%;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    width: 100%;
+    padding: 0 28px;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h2,
+h4,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+
+.nn {
+  background-color: aqua;
+}
