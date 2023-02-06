@@ -68,7 +68,7 @@ export const Contact = ({ contactRef }) => {
             }}
           >
             {({ errors, touched }) => (
-              <Form data-netlify="true" name="contact" netlify-honeypot="bot-field" hidden>
+              <Form data-netlify="true" name="contact" netlify-honeypot="bot-field" >
                 <div className={style.label}>
                   <Field
                     name="username"
