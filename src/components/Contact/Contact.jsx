@@ -68,12 +68,13 @@ export const Contact = ({ contactRef }) => {
             }}
           >
             {({ errors, touched }) => (
-              <Form data-netlify="true" name="contact" netlify-honeypot="bot-field" >
+              <Form data-netlify="true" name="contact" netlify-honeypot="bot-field">
                 <div className={style.label}>
                   <Field
                     name="username"
                     placeholder="Enter your name"
                     className={style.input}
+
                   />
                 </div>
                 <div className={style.label}>
