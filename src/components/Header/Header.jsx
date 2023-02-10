@@ -25,8 +25,12 @@ export const Header = ({ refs }) => {
   }, []);
 
   const scrollTo = (e) => {
+    e.preventDefault();
     // console.log(hederRef.current);
-    if (e.target.textContent === "Home") {
+    if (
+      e.target.textContent === "Home" ||
+      e.target.textContent === "Finance Ledger"
+    ) {
       refs.homeRef.current.scrollIntoView({
         behavior: "smooth",
       });
@@ -57,58 +61,36 @@ export const Header = ({ refs }) => {
     <div ref={hederRef} className={style.header}>
       <div className="container">
         <div className={style.content}>
-          <div className={style.logo}>
+          <a href="" className={style.logo} onClick={scrollTo}>
             <HandySvg className={style.logoIcon} src={OpenBookIcon} />
-            <p>
-              <span className={style.logoPart}>Finance</span> Ledger
-            </p>
-          </div>
+            <span className={style.logoPart}>Finance</span> Ledger
+          </a>
           <nav className={style.nav}>
             <ul className={style.navList}>
               <li className={style.navItem}>
-                <button
-                  type="button"
-                  className={style.navButton}
-                  onClick={scrollTo}
-                >
+                <a href="" className={style.navButton} onClick={scrollTo}>
                   Home
-                </button>
+                </a>
               </li>
               <li className={style.navItem}>
-                <button
-                  type="button"
-                  className={style.navButton}
-                  onClick={scrollTo}
-                >
+                <a href="" className={style.navButton} onClick={scrollTo}>
                   About
-                </button>
+                </a>
               </li>
               <li className={style.navItem}>
-                <button
-                  type="button"
-                  className={style.navButton}
-                  onClick={scrollTo}
-                >
+                <a href="" className={style.navButton} onClick={scrollTo}>
                   Cases
-                </button>
+                </a>
               </li>
               <li className={style.navItem}>
-                <button
-                  type="button"
-                  className={style.navButton}
-                  onClick={scrollTo}
-                >
+                <a href="" className={style.navButton} onClick={scrollTo}>
                   Blog
-                </button>
+                </a>
               </li>
               <li className={style.navItem}>
-                <button
-                  type="button"
-                  className={style.navButton}
-                  onClick={scrollTo}
-                >
+                <a href="" className={style.navButton} onClick={scrollTo}>
                   Contact
-                </button>
+                </a>
               </li>
             </ul>
           </nav>

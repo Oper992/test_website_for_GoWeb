@@ -9,14 +9,8 @@ export const ImageModal = ({ id, closeModal, nextImage, prevImage }) => {
           return (
             image.id === id && (
               <picture key={image.id}>
-                <source
-                  srcSet={`${image.srcWebp1x} 1x, ${image.srcWebp2x} 2x`}
-                  type="image/webp"
-                />
-                <source
-                  srcSet={`${image.srcJpg1x} 1x, ${image.srcJpg2x} 2x`}
-                  type="image/jpeg"
-                />
+                <source srcSet={image.srcWebp2x} type="image/webp" />
+                <source srcSet={image.srcJpg2x} type="image/jpeg" />
                 <img src={image.srcJpg1x} alt={`Case ${image.id}`} />
               </picture>
             )
