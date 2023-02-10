@@ -13,7 +13,56 @@
 
 .image {
   position: relative;
+  padding: 0 5px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    padding: 0 10px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 0 20px;
+  }
 }
+
+.nextArrowContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0.7;
+
+  @media screen and (min-width: 1360px) {
+    opacity: 0;
+    padding-right: 30px;
+  }
+}
+
+.nextArrowContainer:hover {
+  @media screen and (min-width: 1360px) {
+    opacity: 0.8;
+  }
+}
+
+.prevArrowContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  visibility: hidden;
+
+  @media screen and (min-width: 1360px) {
+    padding-left: 30px;
+  }
+}
+
 .close {
   position: absolute;
   bottom: -40px;
@@ -21,33 +70,22 @@
 }
 
 .nextArrow {
-  position: absolute;
-  bottom: -50px;
-  right: 70px;
-
-  @media screen and (min-width: 768px) and (max-width: 1359px) {
-    bottom: 45%;
-    right: -60px;
-  }
-
-  @media screen and (min-width: 1360px) {
-    bottom: 45%;
-    right: -100px;
-  }
+  width: 80px;
 }
 
 .prevArrow {
-  position: absolute;
-  bottom: -50px;
-  left: 70px;
+  // position: absolute;
+  // top: 50%;
+  // left: -10px;
+  // transform: translate(0, -50%);
 
-  @media screen and (min-width: 768px) and (max-width: 1359px) {
-    bottom: 45%;
-    left: -60px;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1359px) {
+  //   bottom: 45%;
+  //   left: -60px;
+  // }
 
-  @media screen and (min-width: 1360px) {
-    bottom: 45%;
-    left: -100px;
-  }
+  // @media screen and (min-width: 1360px) {
+  //   bottom: 45%;
+  //   left: -100px;
+  // }
 }
