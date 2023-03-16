@@ -12,24 +12,27 @@
   color: #ffffff;
 }
 
-.socialIconsList {
+.footer__socialLinksList {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
 }
 
-.socialIconsItem {
+.footer__socialLinksItem {
   display: flex;
   align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.footer__socialLinksItemIcon {
   fill: white;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.socialIconsItem:not(:last-child) {
-  margin-right: 25px;
-}
-
-.socialIconsItem:hover {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #28a745;
+  &:hover {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #28a745;
+  }
 }

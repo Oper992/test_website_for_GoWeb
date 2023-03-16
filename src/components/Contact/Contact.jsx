@@ -45,14 +45,14 @@ export const Contact = ({ contactRef }) => {
         <Desktop>
           <picture className={style.contactImage}>
             <source
-              srcset="/images/home/contact.webp 1x, /images/home/contact@2x.webp 2x"
+              srcset="/images/home/ContactDesktop.webp 1x, /images/home/ContactDesktop@2x.webp 2x"
               type="image/webp"
             />
             <source
-              srcset="/images/home/contact.jpg 1x, /images/home/contact@2x.jpg 2x"
+              srcset="/images/home/ContactDesktop.jpg 1x, /images/home/ContactDesktop@2x.jpg 2x"
               type="image/jpeg"
             />
-            <img src="/images/home/contact.jpg" alt="Steve Smith" />
+            <img src="/images/home/ContactDesktop.jpg" alt="Steve Smith" />
           </picture>
         </Desktop>
         <div className={style.contactForm}>
