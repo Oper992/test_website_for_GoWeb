@@ -1,12 +1,4 @@
 import style from "./About.module.scss";
-import peopleImageJpgTablet from "../../images/home/Rectangle.jpg";
-import peopleImageJpgRetinaTablet from "../../images/home/Rectangle@2x.jpg";
-import peopleImageWebpTablet from "../../images/home/Rectangle.webp";
-import peopleImageWebpRetinaTablet from "../../images/home/Rectangle_2x.webp";
-import peopleImageJpg from "../../images/home/people.jpg";
-import peopleImageJpgRetina from "../../images/home/people@2x.jpg";
-import peopleImageWebp from "../../images/home/people.webp";
-import peopleImageWebpRetina from "../../images/home/people@2x.webp";
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
 
 export const About = ({ aboutRef }) => {
@@ -17,14 +9,14 @@ export const About = ({ aboutRef }) => {
           <div className={style.peopleImage}>
             <picture>
               <source
-                srcset={`${peopleImageWebp} 1x, ${peopleImageWebpRetina} 2x`}
+                srcset="/images/home/people.webp 1x, /images/home/people@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset={`${peopleImageJpg} 1x, ${peopleImageJpgRetina} 2x`}
+                srcset="/images/home/people.jpeg 1x, /images/home/people@2x.jpeg 2x"
                 type="image/jpeg"
               />
-              <img src={peopleImageJpg} alt="People" />
+              <img src="/images/home/people.jpeg" alt="People" />
             </picture>
           </div>
         </Mobile>
@@ -32,14 +24,14 @@ export const About = ({ aboutRef }) => {
           <div className={style.peopleImage}>
             <picture>
               <source
-                srcset={`${peopleImageWebpTablet} 1x, ${peopleImageWebpRetinaTablet} 2x`}
+                srcset="/images/home/Rectangle.webp 1x, /images/home/Rectangle_2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset={`${peopleImageJpgTablet} 1x, ${peopleImageJpgRetinaTablet} 2x`}
+                srcset="/images/home/Rectangle.jpeg 1x, /images/home/Rectangle@2x.jpeg 2x"
                 type="image/jpeg"
               />
-              <img src={peopleImageJpgTablet} alt="People" />
+              <img src="/images/home/Rectangle.jpeg" alt="People" />
             </picture>
           </div>
         </Tablet>
@@ -47,14 +39,14 @@ export const About = ({ aboutRef }) => {
           <div className={style.peopleImage}>
             <picture>
               <source
-                srcset={`${peopleImageWebp} 1x, ${peopleImageWebpRetina} 2x`}
+                srcset="/images/home/peopleDesktop@1x.webp 1x, /images/home/peopleDesktop@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset={`${peopleImageJpg} 1x, ${peopleImageJpgRetina} 2x`}
+                srcset="/images/home/peopleDesktop@1x.jpeg 1x, /images/home/peopleDesktop@2x.jpeg 2x"
                 type="image/jpeg"
               />
-              <img src={peopleImageJpg} alt="People" />
+              <img src="/images/home/peopleDesktop@1x.jpeg" alt="People" />
             </picture>
           </div>
         </Desktop>
