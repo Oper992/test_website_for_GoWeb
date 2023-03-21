@@ -14,13 +14,14 @@
 .image {
   position: relative;
   padding: 0 5px;
+  width: 90%;
 
   @media screen and (min-width: 768px) and (max-width: 1359px) {
-    padding: 0 10px;
+    width: 90%;
   }
 
   @media screen and (min-width: 1360px) {
-    padding: 0 20px;
+    width: 60%;
   }
 }
 
@@ -39,11 +40,11 @@
     opacity: 0;
     padding-right: 30px;
   }
-}
 
-.nextArrowContainer:hover {
-  @media screen and (min-width: 1360px) {
-    opacity: 0.8;
+  &:hover {
+    @media screen and (min-width: 1360px) {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -56,10 +57,17 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  visibility: hidden;
+  opacity: 0.7;
 
   @media screen and (min-width: 1360px) {
+    opacity: 0;
     padding-left: 30px;
+  }
+
+  &:hover {
+    @media screen and (min-width: 1360px) {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -70,7 +78,7 @@
 }
 
 .nextArrow {
-  width: 80px;
+  // width: 80px;
 }
 
 .prevArrow {
