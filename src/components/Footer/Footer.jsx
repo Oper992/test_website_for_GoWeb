@@ -6,7 +6,7 @@ export const Footer = () => {
     <div className={style.footer}>
       <ul className={style.footer__socialLinksList}>
         <li className={style.footer__socialLinksItem}>
-          <a href="" className={style.footer__socialLinksItemIcon}>
+          <a href="_" className={style.footer__socialLinksItemIcon}>
             <HandySvg
               src="/images/social/facebook.svg"
               width="35"
@@ -15,17 +15,17 @@ export const Footer = () => {
           </a>
         </li>
         <li className={style.footer__socialLinksItem}>
-          <a href="" className={style.footer__socialLinksItemIcon}>
+          <a href="_" className={style.footer__socialLinksItemIcon}>
             <HandySvg src="/images/social/twitter.svg" width="35" height="35" />
           </a>
         </li>
         <li className={style.footer__socialLinksItem}>
-          <a href="" className={style.footer__socialLinksItemIcon}>
+          <a href="_" className={style.footer__socialLinksItemIcon}>
             <HandySvg src="/images/social/youtube.svg" width="40" height="28" />
           </a>
         </li>
         <li className={style.footer__socialLinksItem}>
-          <a href="" className={style.footer__socialLinksItemIcon}>
+          <a href="_" className={style.footer__socialLinksItemIcon}>
             <HandySvg
               src="/images/social/linkedin.svg"
               width="31"

@@ -61,34 +61,34 @@ export const Header = ({ refs }) => {
     <div ref={hederRef} className={style.header}>
       <div className="container">
         <div className={style.content}>
-          <a href="" className={style.logo} onClick={scrollTo}>
+          <a href="_" className={style.logo} onClick={scrollTo}>
             <HandySvg className={style.logoIcon} src={OpenBookIcon} />
             <span className={style.logoPart}>Finance</span> Ledger
           </a>
           <nav className={style.nav}>
             <ul className={style.navList}>
               <li className={style.navItem}>
-                <a href="" className={style.navButton} onClick={scrollTo}>
+                <a href="_" className={style.navButton} onClick={scrollTo}>
                   Home
                 </a>
               </li>
               <li className={style.navItem}>
-                <a href="" className={style.navButton} onClick={scrollTo}>
+                <a href="_" className={style.navButton} onClick={scrollTo}>
                   About
                 </a>
               </li>
               <li className={style.navItem}>
-                <a href="" className={style.navButton} onClick={scrollTo}>
+                <a href="_" className={style.navButton} onClick={scrollTo}>
                   Cases
                 </a>
               </li>
               <li className={style.navItem}>
-                <a href="" className={style.navButton} onClick={scrollTo}>
+                <a href="_" className={style.navButton} onClick={scrollTo}>
                   Blog
                 </a>
               </li>
               <li className={style.navItem}>
-                <a href="" className={style.navButton} onClick={scrollTo}>
+                <a href="_" className={style.navButton} onClick={scrollTo}>
                   Contact
                 </a>
               </li>

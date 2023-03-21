@@ -28,7 +28,7 @@ export const Team = () => {
                 </picture>
                 <ul className={style.socialLinksList}>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/facebook.svg"
                         width="35"
@@ -37,7 +37,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/twitter.svg"
                         width="35"
@@ -46,7 +46,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/youtube.svg"
                         width="40"
@@ -55,7 +55,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/linkedin.svg"
                         width="31"
@@ -83,7 +83,7 @@ export const Team = () => {
                 </picture>
                 <ul className={style.socialLinksList}>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/facebook.svg"
                         width="35"
@@ -92,7 +92,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/twitter.svg"
                         width="35"
@@ -101,7 +101,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/youtube.svg"
                         width="40"
@@ -110,7 +110,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/linkedin.svg"
                         width="31"
@@ -138,7 +138,7 @@ export const Team = () => {
                 </picture>
                 <ul className={style.socialLinksList}>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/facebook.svg"
                         width="35"
@@ -147,7 +147,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/twitter.svg"
                         width="35"
@@ -156,7 +156,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/youtube.svg"
                         width="40"
@@ -165,7 +165,7 @@ export const Team = () => {
                     </a>
                   </li>
                   <li className={style.socialIconsItem}>
-                    <a href="" className={style.socialLinksItemIcon}>
+                    <a href="_" className={style.socialLinksItemIcon}>
                       <HandySvg
                         src="/images/social/linkedin.svg"
                         width="31"
