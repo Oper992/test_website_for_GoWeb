@@ -21,6 +21,7 @@
   width: 100%;
   padding: 51px 20px 50px 20px;
   color: #333333;
+
   @media screen and (min-width: 768px) and (max-width: 1359px) {
     width: 400px;
     padding: 32px 0 33px 32px;
@@ -33,8 +34,12 @@
 }
 
 .contactImage {
-  width: 368px;
+  width: 100%;
   height: 100%;
+
+  @media screen and (min-width: 1360px) {
+    width: 368px;
+  }
 
   @media screen and (min-width: 1360px) {
     width: 670px;

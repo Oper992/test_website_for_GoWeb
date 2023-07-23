@@ -9,11 +9,11 @@ export const Blog = ({ blogRef }) => {
           <div className={style.blogImage}>
             <picture>
               <source
-                srcset="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
+                srcSet="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
+                srcSet="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
                 type="image/jpeg"
               />
               <img src="/images/home/blog@2x.jpg" alt="People" />
@@ -50,11 +50,11 @@ export const Blog = ({ blogRef }) => {
           <div className={style.blogImage}>
             <picture>
               <source
-                srcset="/images/home/BlogTablet.webp 1x, /images/home/BlogTablet@2x.webp 2x"
+                srcSet="/images/home/BlogTablet.webp 1x, /images/home/BlogTablet@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset="/images/home/BlogTablet.jpg 1x, /images/home/BlogTablet@2x.jpg 2x"
+                srcSet="/images/home/BlogTablet.jpg 1x, /images/home/BlogTablet@2x.jpg 2x"
                 type="image/jpeg"
               />
               <img src="/images/home/BlogTablet.jpg" alt="People" />
@@ -78,11 +78,11 @@ export const Blog = ({ blogRef }) => {
           <div className={style.blogImage}>
             <picture>
               <source
-                srcset="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
+                srcSet="/images/home/blog.webp 1x, /images/home/blog@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
+                srcSet="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
                 type="image/jpeg"
               />
               <img src="/images/home/blog@2x.jpg" alt="People" />

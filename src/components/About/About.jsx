@@ -1,5 +1,6 @@
 import style from "./About.module.scss";
 import { Mobile, Tablet, Desktop } from "../../helpers/responsiveComponents";
+import { peopleImage } from "../../helpers/images";
 
 export const About = ({ aboutRef }) => {
   return (
@@ -9,11 +10,11 @@ export const About = ({ aboutRef }) => {
           <div className={style.peopleImage}>
             <picture>
               <source
-                srcset="/images/home/people.webp 1x, /images/home/people@2x.webp 2x"
+                srcSet={`${peopleImage} 1x, ${peopleImage} 2x`}
                 type="image/webp"
               />
               <source
-                srcset="/images/home/people.jpeg 1x, /images/home/people@2x.jpeg 2x"
+                srcSet="/images/home/people.jpeg 1x, /images/home/people@2x.jpeg 2x"
                 type="image/jpeg"
               />
               <img src="/images/home/people.jpeg" alt="People" />
@@ -24,11 +25,11 @@ export const About = ({ aboutRef }) => {
           <div className={style.peopleImage}>
             <picture>
               <source
-                srcset="/images/home/Rectangle.webp 1x, /images/home/Rectangle_2x.webp 2x"
+                srcSet="/images/home/Rectangle.webp 1x, /images/home/Rectangle_2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset="/images/home/Rectangle.jpeg 1x, /images/home/Rectangle@2x.jpeg 2x"
+                srcSet="/images/home/Rectangle.jpeg 1x, /images/home/Rectangle@2x.jpeg 2x"
                 type="image/jpeg"
               />
               <img src="/images/home/Rectangle.jpeg" alt="People" />
@@ -39,11 +40,11 @@ export const About = ({ aboutRef }) => {
           <div className={style.peopleImage}>
             <picture>
               <source
-                srcset="/images/home/peopleDesktop@1x.webp 1x, /images/home/peopleDesktop@2x.webp 2x"
+                srcSet="/images/home/peopleDesktop@1x.webp 1x, /images/home/peopleDesktop@2x.webp 2x"
                 type="image/webp"
               />
               <source
-                srcset="/images/home/peopleDesktop@1x.jpeg 1x, /images/home/peopleDesktop@2x.jpeg 2x"
+                srcSet="/images/home/peopleDesktop@1x.jpeg 1x, /images/home/peopleDesktop@2x.jpeg 2x"
                 type="image/jpeg"
               />
               <img src="/images/home/peopleDesktop@1x.jpeg" alt="People" />

@@ -1,3 +1,5 @@
+export const peopleImage = "/images/home/people@2x.webp"
+
 export const images = [
   {
     id: 1,

@@ -38,7 +38,7 @@ export const Cases = ({ casesRef }) => {
             {images.map((image) => {
               return (
                 <li key={image.id} className={style.imagesItem}>
-                  <picture id={image.id} onClick={openModal}>
+                  <picture id={image.id} onClick={openModal} className={style.imagesItem}>
                     <source
                       srcSet={`${image.srcWebp1x} 1x, ${image.srcWebp2x} 2x`}
                       type="image/webp"
