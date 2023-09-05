@@ -34,14 +34,18 @@
 }
 
 .contactImage {
-  width: 100%;
+  display: block;
+  max-width: 670px;
   height: 100%;
+  margin: 0 auto;
 
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    margin: 0;
     width: 368px;
   }
 
   @media screen and (min-width: 1360px) {
+    margin: 0;
     width: 670px;
   }
 }
