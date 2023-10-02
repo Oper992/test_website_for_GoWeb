@@ -1,27 +1,14 @@
 import * as React from "react";
 import style from "./Cases.module.scss";
-import { ImageModal } from "../ImageModal/ImageModal";
 import { images } from "../../helpers/images";
+import FsLightbox from "fslightbox-react";
 
 export const Cases = ({ casesRef }) => {
-  const [isModal, setIsModal] = React.useState(false);
+  const [toggler, setToggler] = React.useState(false);
   const [imageId, setImageId] = React.useState(null);
 
   const openModal = (e) => {
     setImageId(Number(e.currentTarget.id));
-    setIsModal(true);
-  };
-
-  const closeModal = () => {
-    setIsModal(false);
-  };
-
-  const nextImage = () => {
-    setImageId(imageId === 6 ? 1 : imageId + 1);
-  };
-
-  const prevImage = () => {
-    setImageId(imageId === 1 ? 6 : imageId - 1);
   };
 
   return (
@@ -38,7 +25,7 @@ export const Cases = ({ casesRef }) => {
             {images.map((image) => {
               return (
                 <li key={image.id} className={style.imagesItem}>
-                  <picture id={image.id} onClick={openModal} className={style.imagesItem}>
+                  <picture id={image.id} onClick={() => setToggler(!toggler)} className={style.imagesItem}>
                     <source
                       srcSet={`${image.srcWebp1x} 1x, ${image.srcWebp2x} 2x`}
                       type="image/webp"
@@ -55,14 +42,11 @@ export const Cases = ({ casesRef }) => {
           </ul>
         </div>
       </div>
-      {isModal && (
-        <ImageModal
-          id={imageId}
-          closeModal={closeModal}
-          nextImage={nextImage}
-          prevImage={prevImage}
-        />
-      )}
+      <FsLightbox
+        toggler={toggler}
+        sources={["/images/home/blog.jpg", "/images/cases/cases2@2x.jpg"]}
+        key={productIndex}
+      />
     </section>
   );
 };
